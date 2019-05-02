@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>LoginLet</servlet-name>
+        <servlet-class>com.servlet.LoginLet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginLet</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.servlet.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemServlet</servlet-name>
+        <servlet-class>com.servlet.ItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemServlet</servlet-name>
+        <url-pattern>/AddItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SelectServlet</servlet-name>
+        <servlet-class>com.servlet.SelectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectServlet</servlet-name>
+        <url-pattern>/SelectItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderAServlet</servlet-name>
+        <servlet-class>com.servlet.OrderAServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderAServlet</servlet-name>
+        <url-pattern>/AddOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderSServlet</servlet-name>
+        <servlet-class>com.servlet.OrderSServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderSServlet</servlet-name>
+        <url-pattern>/SelectOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NameListServlet</servlet-name>
+        <servlet-class>com.servlet.NameListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NameListServlet</servlet-name>
+        <url-pattern>/NameList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StatusOrderServlet</servlet-name>
+        <servlet-class>com.servlet.StatusOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatusOrderServlet</servlet-name>
+        <url-pattern>/OrderStatus</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>SingleItemServlet</servlet-name>
+    <servlet-class>com.servlet.SingleItemServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>SingleItemServlet</servlet-name>
+        <url-pattern>/SingleItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateStatusServlet</servlet-name>
+        <servlet-class>com.servlet.UpdateStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateStatusServlet</servlet-name>
+        <url-pattern>/UpdateStatus</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CIUpdateServlet</servlet-name>
+        <servlet-class>com.servlet.CIUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CIUpdateServlet</servlet-name>
+        <url-pattern>/UpdateCI</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CIGetServlet</servlet-name>
+        <servlet-class>com.servlet.CIGetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CIGetServlet</servlet-name>
+        <url-pattern>/GetCI</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MessageIServlet</servlet-name>
+        <servlet-class>com.servlet.MessageIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageIServlet</servlet-name>
+        <url-pattern>/MessageI</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MessageGServlet</servlet-name>
+        <servlet-class>com.servlet.MessageGServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageGServlet</servlet-name>
+        <url-pattern>/MessageG</url-pattern>
+    </servlet-mapping>
+
+</web-app>
