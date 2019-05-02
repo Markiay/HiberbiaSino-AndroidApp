@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--设置背景颜色-->
+    <solid android:color="@color/color_white" />
+    <!--这个是设置边框的粗细,以及边框颜色的-->
+    <stroke android:width="1dp" android:color="@color/color_black" />
+    <!--这个是设置边距的-->
+    <padding
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp" />
+    <!-- 设置四个圆角的半径 -->
+    <corners
+        android:bottomLeftRadius="10px"
+        android:bottomRightRadius="10px"
+        android:topLeftRadius="10px"
+        android:topRightRadius="10px" />
+    <!-- 渐变 -->
+    <!--这个是设置渐变色的,可选属性有: startColor:起始颜色 endColor:结束颜色 centerColor:中间颜色
+    angle:方向角度,等于0时,从左到右,然后逆时针方向转,当angle = 90度时从下往上 type:设置渐变的类型-->
+    <gradient
+        android:angle="270"
+        android:endColor="#FFFFFF"
+        android:startColor="#FFFFFF"
+        android:type="linear"/>
+</shape>
+
+    <!--android:endColor="#C0C0C0"-->
+    <!--android:startColor="#FCD209"-->

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:textSize="35sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/claim_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/claim_subtitle1"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/claim_itemid"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="123556"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/claim_name"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/goodsPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="bag"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/claim_uname"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="test1"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/claim_desc"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:minLines="2"
+            android:maxLines="5"
+            android:text="detail"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="@string/claim_subtitle2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/claim_ld"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TimePicker"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_style"
+                android:text="DD/MM/YYYY" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

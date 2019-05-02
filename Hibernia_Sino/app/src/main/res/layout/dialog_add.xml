@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE9E9">
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:clickable="true"
+        android:text="@string/item_cancel"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dialog_photo"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_linear"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_add_yellow" />
+
+    <LinearLayout
+        android:id="@+id/dialog_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialog_photo">
+
+        <Button
+            android:id="@+id/dialog_capture"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_style"
+            android:text="@string/item_capture"
+            tools:layout_editor_absoluteX="243dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+        <Button
+            android:id="@+id/dialog_gallery"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:text="@string/item_gallery"
+            tools:layout_editor_absoluteX="245dp"
+            tools:layout_editor_absoluteY="165dp" />
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="14dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:counterOverflowTextAppearance="@style/counterOverFlowAppearance"
+        app:counterTextAppearance="@style/counterAppearance"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/errorAppearance"
+        app:hintTextAppearance="@style/text_input_layout"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <EditText
+            android:id="@+id/dialog_itemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/item_name"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="7"
+        app:counterOverflowTextAppearance="@style/counterOverFlowAppearance"
+        app:counterTextAppearance="@style/counterAppearance"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/errorAppearance"
+        app:hintTextAppearance="@style/text_input_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <EditText
+            android:id="@+id/dialog_itemprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/item_price"
+            android:inputType="numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="200"
+        app:counterOverflowTextAppearance="@style/counterOverFlowAppearance"
+        app:counterTextAppearance="@style/counterAppearance"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/errorAppearance"
+        app:hintTextAppearance="@style/text_input_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <EditText
+            android:id="@+id/dialog_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/item_desc"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:minLines="3" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/dialog_imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+        app:srcCompat="@drawable/ic_action_arrow_right" />
+
+</android.support.constraint.ConstraintLayout>

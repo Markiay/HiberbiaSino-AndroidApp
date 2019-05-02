@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mark.employer.E_WelcomeActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/E_welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Evening! Employee11"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="23sp"
+            android:layout_weight="1"
+            android:textStyle="italic"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:text="@string/logout"
+            android:background="@drawable/button_style"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/E_welcomeProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ewelcome_process"
+        android:gravity="start"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:background="@drawable/style_textview_border"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/E_welcomeApprove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ewelcome_approve"
+        android:gravity="start"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:background="@drawable/style_textview_border"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/E_welcomeDeny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ewelcome_deny"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:background="@drawable/style_textview_border"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/E_welcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ewelcome_message"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:background="@drawable/style_textview_border"
+        android:clickable="true"/>
+</LinearLayout>
