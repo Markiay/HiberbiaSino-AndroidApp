@@ -162,9 +162,9 @@ public class Perfect_Info extends AppCompatActivity implements View.OnClickListe
                     textInputLayout1.setError(null);
                 }
                 if (Pattern.matches(REGEX_MOBILE, s)){
-                    textInputLayout2.setError(null);
+                    textInputLayout1.setError(null);
                 }else{
-                    textInputLayout2.setError("Invalid format");
+                    textInputLayout1.setError("Invalid format");
                 }
             }
 
